@@ -21,7 +21,7 @@ def main ():
     vacation_seconds = minutes_to_seconds(vacation_minutes)
 
     # Print the results to the screen.
-        print(f'That is the equivalent to {vacation_hours:,} hours or {vacation_minutes:,} or {vacation_seconds:,} seconds.')
+    print(f'That is the equivalent to {vacation_hours:,} hours or {vacation_minutes:,} or {vacation_seconds:,} seconds.')
 
 
 # Define the days_to_hours function.

@@ -15,10 +15,11 @@ def main ():
     '''
     # Prompt the user for the number of vacation days.
     vacation_days = int(input('How many days do you plan to spend on your next vacation? '))
+    
     # Convert the days into hours, minutes, and seconds.
     vacation_hours = days_to_hours(vacation_days)
-    vacation_minutes = hours_to_minutes(vacation_hours)
-    vacation_seconds = minutes_to_seconds(vacation_minutes)
+    vacation_minutes = mins_and_secs(vacation_hours)
+    vacation_seconds = mins_and_secs(vacation_minutes)
 
     # Print the results to the screen.
     print(f'That is the equivalent to {vacation_hours:,} hours or {vacation_minutes:,} or {vacation_seconds:,} seconds.')
@@ -35,23 +36,13 @@ def days_to_hours(days):
 
 
 # Define the hours_to_minutes function.
-def hours_to_minutes(hours):
+def mins_and_secs(time):
     '''Converts a number of hours into minutes.
     '''
     # Calculate the number of minutes in the supplied number of hours and
     # return the result.
-    minutes = hours * 60
-    return minutes
-
-
-# Define the minutes_to_seconds function.
-def minutes_to_seconds(minutes):
-    '''Converts a number of minutes into seconds.
-    '''
-    # Calculate the number of seconds in the supplied minutes and return the
-    # result.
-    seconds = minutes * 60
-    return seconds
+    min_sec = time * 60
+    return min_sec
 
 
 # Call the main() function to execute the program.
